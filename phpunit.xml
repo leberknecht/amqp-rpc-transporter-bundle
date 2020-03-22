@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true" forceCoversAnnotation="false">
+    <testsuites>
+        <testsuite name="AmqpRpcTransporterBundle test suite">
+            <directory suffix="Test.php">./Tests</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+    </logging>
+    <filter>
+        <whitelist>
+            <directory>./Stamp</directory>
+            <directory>./Transport</directory>
+        </whitelist>
+    </filter>
+</phpunit>

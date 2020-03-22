@@ -1,0 +1,37 @@
+{
+  "name": "leberknecht/amqp-rpc-transporter-bundle",
+  "type": "symfony-bundle",
+  "version": "0.1.0",
+  "description": "The bundle implements RPC functionality for AMQP protocol to the messenger component",
+  "keywords": [
+    "amqp",
+    "rpc",
+    "symfony",
+    "messenger"
+  ],
+  "homepage": "https://github.com/leberknecht/amqp-rpc-transporter-bundle",
+  "license": "GPL",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Delf Tonder",
+      "homepage": "https://github.com/leberknecht/amqp-rpc-transporter-bundle"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "symfony/framework-bundle": ">=4.0",
+    "symfony/messenger": ">=4.3-dev",
+    "ext-amqp": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "php-coveralls/php-coveralls": "0.7.*@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "leberknecht\\AmqpRpcTransporterBundle": ""
+    }
+  },
+  "target-dir": "leberknecht/AmqpRpcTransporterBundle"
+}

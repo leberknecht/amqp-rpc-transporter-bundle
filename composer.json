@@ -10,7 +10,7 @@
     "messenger"
   ],
   "homepage": "https://github.com/leberknecht/amqp-rpc-transporter-bundle",
-  "license": "GPL",
+  "license": "GPL-3.0-or-later",
   "minimum-stability": "dev",
   "authors": [
     {

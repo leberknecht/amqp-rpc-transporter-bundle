@@ -15,9 +15,13 @@ class AmqpRpcTransport extends AmqpTransport implements TransportInterface
 
     public function __construct(Connection $connection, SerializerInterface $serializer = null)
     {
-        $exchange = new \AMQPExchange($connection->channel());
-        $this->transceiver = new AmqpRpcTransceiver($connection, new AmqpFactory(), $exchange, $serializer);
+        $this->setTransceiver(new AmqpRpcTransceiver($connection, $serializer));
         parent::__construct($connection, $serializer);
+    }
+
+    public function setTransceiver(AmqpRpcTransceiver $transceiver)
+    {
+        $this->transceiver = $transceiver;
     }
 
     /**

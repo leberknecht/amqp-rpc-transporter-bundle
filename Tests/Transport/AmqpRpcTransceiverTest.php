@@ -38,10 +38,11 @@ class AmqpRpcTransceiverTest extends TestCase
         $this->amqpFactoryMock = $this->getMockBuilder(AmqpFactory::class)->disableOriginalConstructor()->getMock();
         $this->exchangeMock = $this->getMockBuilder(AMQPExchange::class)->disableOriginalConstructor()->getMock();
         $this->amqpRpcTransceiver = new AmqpRpcTransceiver(
-            $this->connectionMock,
-            $this->amqpFactoryMock,
-            $this->exchangeMock
+            $this->connectionMock
         );
+
+        $this->amqpRpcTransceiver->setExchange($this->exchangeMock);
+        $this->amqpRpcTransceiver->setAmqpFactory($this->amqpFactoryMock);
     }
 
     public function testSend()

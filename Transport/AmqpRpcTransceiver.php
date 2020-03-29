@@ -40,14 +40,24 @@ class AmqpRpcTransceiver extends AmqpReceiver
      */
     private $exchange;
 
-    public function __construct(Connection $connection, AmqpFactory $amqpFactory, AMQPExchange $exchange, SerializerInterface $serializer = null)
+    public function __construct(Connection $connection, SerializerInterface $serializer = null)
     {
         $this->connection = $connection;
         $this->serializer = $serializer ?? new PhpSerializer();
-        $this->amqpFactory = $amqpFactory;
-        $this->exchange = $exchange;
+        $this->setAmqpFactory(new AmqpFactory());
+        $this->setExchange(new AMQPExchange($this->connection->channel()));
         $this->amqpSender = new AmqpSender($connection, $serializer);
         parent::__construct($connection, $serializer);
+    }
+
+    public function setAmqpFactory(AmqpFactory $factory)
+    {
+        $this->amqpFactory = $factory;
+    }
+
+    public function setExchange(AMQPExchange $exchange)
+    {
+        $this->exchange = $exchange;
     }
 
     public function ack(Envelope $envelope): void

@@ -2,7 +2,7 @@
 
 namespace Tests\Stamp;
 
-use leberknecht\AmqpRpcTransporterBundle\Stamp\ResponseStamp;
+use Leberknecht\AmqpRpcTransporterBundle\Stamp\ResponseStamp;
 use PHPUnit\Framework\TestCase;
 
 class ResponseStampTest extends TestCase

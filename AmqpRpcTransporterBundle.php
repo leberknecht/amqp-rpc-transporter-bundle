@@ -1,6 +1,6 @@
 <?php
 
-namespace leberknecht\AmqpRpcTransporterBundle;
+namespace Leberknecht\AmqpRpcTransporterBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace leberknecht\AmqpRpcTransporterBundle\Transport;
+namespace Leberknecht\AmqpRpcTransporterBundle\Transport;
 
 use Symfony\Component\Messenger\Transport\AmqpExt\Connection;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;

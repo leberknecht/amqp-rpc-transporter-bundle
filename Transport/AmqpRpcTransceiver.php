@@ -1,9 +1,9 @@
 <?php
 
-namespace leberknecht\AmqpRpcTransporterBundle\Transport;
+namespace Leberknecht\AmqpRpcTransporterBundle\Transport;
 
 use AMQPExchange;
-use leberknecht\AmqpRpcTransporterBundle\Stamp\ResponseStamp;
+use Leberknecht\AmqpRpcTransporterBundle\Stamp\ResponseStamp;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\Exception\LogicException;
 use Symfony\Component\Messenger\Exception\TransportException;

@@ -1,6 +1,6 @@
 <?php
 
-namespace leberknecht\AmqpRpcTransporterBundle\Stamp;
+namespace Leberknecht\AmqpRpcTransporterBundle\Stamp;
 
 use Symfony\Component\Messenger\Stamp\StampInterface;
 

@@ -30,8 +30,7 @@
   },
   "autoload": {
     "psr-0": {
-      "leberknecht\\AmqpRpcTransporterBundle": ""
+      "Leberknecht\\AmqpRpcTransporterBundle": ""
     }
-  },
-  "target-dir": "leberknecht/AmqpRpcTransporterBundle"
+  }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace leberknecht\AmqpRpcTransporterBundle\Tests\Transport;
+namespace Leberknecht\AmqpRpcTransporterBundle\Tests\Transport;
 
 use AMQPEnvelope;
 use AMQPExchange;
-use leberknecht\AmqpRpcTransporterBundle\Transport\AmqpRpcTransceiver;
+use Leberknecht\AmqpRpcTransporterBundle\Transport\AmqpRpcTransceiver;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Messenger\Envelope;

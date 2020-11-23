@@ -29,8 +29,11 @@
     "php-coveralls/php-coveralls": "0.7.*@dev"
   },
   "autoload": {
-    "psr-0": {
-      "Leberknecht\\AmqpRpcTransporterBundle": ""
-    }
+    "psr-4": {
+      "Leberknecht\\AmqpRpcTransporterBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
   }
 }
